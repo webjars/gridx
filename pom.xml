@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>gridx</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.3.3-SNAPSHOT</version>
     <name>gridx</name>
     <description>WebJar for GridX</description>
     <url>http://oria.github.io/gridx/</url>
@@ -47,7 +47,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <gridx.version>1.3</gridx.version>
+        <gridx.version>1.3.3</gridx.version>
         <gridx.url>https://github.com/oria/gridx/archive</gridx.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/gridx/${gridx.version}</destDir>
     </properties>
@@ -64,7 +64,7 @@
                         <goals><goal>download-single</goal></goals>
                         <configuration>
                             <url>${gridx.url}</url>
-                            <fromFile>${gridx.version}.zip</fromFile>
+                            <fromFile>v${gridx.version}.zip</fromFile>
                             <toFile>${project.build.directory}/gridx.zip</toFile>
                         </configuration>
                     </execution>
